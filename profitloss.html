@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="profitloss.css">
+    <title>Daytrading Profit/Loss Calculator</title>
+</head>
+<body>
+    <div class="container" id="header">
+        Daytrading Profit/Loss Calculator
+    </div>
+    <br>
+    <form class="container" id="form">
+        <div>Initial capital per trade:</div>
+        <div><input id="initial" type="number" step="any" required placeholder="Enter a currency amount"></div>
+        <div>Profit target:</div>
+        <div><input id="target" type="number" step="any" required placeholder="Enter a percentage"></div>
+        <div>Stop-loss:</div>
+        <div><input id="stoploss" type="number" step="any" required placeholder="Enter a percentage"></div>
+        <div>Win-rate:</div>
+        <div><input id="winrate" type="number" step="any" required placeholder="Enter a percentage"></div>
+        <div>Slippage on losses:</div>
+        <div><input id="slippage" type="number" step="any" required placeholder="Enter a percentage"></div>
+        <div>Fees per trade:</div>
+        <div><input id="fees" type= "number" step="any" required placeholder="Enter a percentage"></div>
+        <div>Trades per period:</div>
+        <div><input id="trades" type="number" step="any" required placeholder="Enter a number"></div>   
+        <div>Number of periods:</div>
+        <div><input id="periods" type="number" step="any" required placeholder="Enter a number"></div>
+        <div id="buttondiv"><button id= "button1" type="submit">Calculate</button></div>
+        <div id="note">Note: Capital + profit/loss is reconstituted as initial capital after each period.</div>
+    </form>
+    <br>
+    <div class="container" id="results">
+        <div>
+            Profit/Loss: $<span id="profit">0</span>
+        </div>
+        <div>
+            Capital + Profit/Loss: $<span id="total">0</span>
+        </div>
+    </div>
+    <script src="profitloss.js"></script>
+</body>
+</html>

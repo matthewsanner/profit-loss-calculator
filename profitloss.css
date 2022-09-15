@@ -1,0 +1,60 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+input {
+    width: 175px;
+    font-size: 14px;
+}
+
+button {
+    font-size: large;
+    padding: 7px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    background-color: rgb(255, 245, 193);
+    padding: 15px;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 400px;
+    row-gap: 15px;
+    font-size: large;
+    margin: 0 auto;
+}
+
+#buttondiv {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
+}
+
+#button1 {
+    background-color: rgb(248, 228, 128);
+}
+
+#form {
+    grid-template-columns: 1fr 1fr;
+}
+
+#results {
+    background-color: rgb(248, 228, 128);
+    font-size: x-large;
+    text-align: center;
+}
+
+#header {
+    background-color: rgb(255, 221, 51);
+    text-align: center;
+    font-size: x-large;
+}
+
+#note {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
+    font-size: medium;
+}
